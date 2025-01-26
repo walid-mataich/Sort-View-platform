@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/visualize.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo"
+          ><i class="bx bx-data"></i>sort-view</a
+        >
+
+        <ul class="nav-container" id="nav-container">
+          <!-- <i class='bx bx-x' onclick="menu_hide()"></i> -->
+
+          <li>
+            <a href="index.html" class="nav-links"><span class="nav-span">home</span></a>
+          </li>
+          <li>
+            <a href="visualize.html" class="nav-links"
+              ><span class="nav-span">visualize</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links"><span class="nav-span">contact</span></a>
+          </li>
+          <li>
+            <a href="" class="nav-links"><span class="nav-span">about us</span></a>
+          </li>
+        </ul>
+        <!-- <div class="nav-btns">
+            <a href=""><i class='bx bx-user-circle'></i></i></a>
+            <a href=""><i class='bx bx-shopping-bag'></i></a>
+            <div id = "me" onclick="menu_nav()" ><i class='bx bx-menu' ></i></div>
+            </div> -->
+      </nav>
+    </header>
+
+    <section class="dashboard">
+      <div class="sidebar">
+        <div class="algo">
+          <label for="options">Choose a sorting algorithm:</label><br />
+          <select id="options" name="options">
+            <option value="option1">Insertion Sort</option>
+            <option value="option2">Selection Sort</option>
+            <option value="option3">Bubble Sort</option>
+            <option value="option3">Merge Sort</option>
+            <option value="option3">Quick Sort</option></select
+          ><br />
+        </div>
+        <div class="num">
+          <label for="bars-num">Enter the number of bars</label><br />
+          <input type="text" id="bars-num" name="bars-num" /><br />
+        </div>
+        <div class="sp" style="display: flex; align-items: center; gap: 10px;">
+          <label for="speed">Delay</label>
+          <input type="range" name="speed" id="speed" min="1" max="200" value="50" />
+        </div>
+        <div>
+          <button id="generate">Generate Array</button>
+          <button id="sort">Start Sorting</button>
+        </div>
+        <!-- <div class="sub">
+          <input type="submit" value="SORT" />
+        </div> -->
+      </div>
+
+      
+        <div class="container" id="container"></div>
+      </div>
+    </section>
+
+    <script src="assets/js/visual.js"></script>
+  </body>
+</html>

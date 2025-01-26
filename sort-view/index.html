@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ecom</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo"
+          ><i class="bx bx-data"></i>sort-view</a
+        >
+
+        <ul class="nav-container" id="nav-container">
+          <!-- <i class='bx bx-x' onclick="menu_hide()"></i> -->
+
+          <li>
+            <a href="index.html" class="nav-links"><span class="nav-span">home</span></a>
+          </li>
+          <li>
+            <a href="visualize.html" class="nav-links"
+              ><span class="nav-span">visualize</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links"><span class="nav-span">contact</span></a>
+          </li>
+          <li>
+            <a href="" class="nav-links"><span class="nav-span">about us</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="info-sec">
+      <div class="hero-div">
+        <img class="sort-img" src="assets/img/klipartz.com.png" alt="" />
+        <div class="info-cont">
+          <h1 class="sort-h">sort-view</h1>
+          <p class="sort-p">
+            A platform for visualizing sorting algorithms, providing clear and
+            dynamic representations of their processes in real time
+          </p>
+          <a href="test/test.html" class="visualize"
+            ><button>Visualize</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="algos">
+      <div class="sorts-container">
+        <div  class="sorts-box">
+          <div data-aos="fade-up" class="sort">
+            <a href="#" class="sort-link">
+              <div class="sort-bg"></div>
+
+              <div class="sort-name">Insertion Sort</div>
+
+              <p class="sort-desc">
+                Inserts elements into their correct position one by one. Best
+                for small or nearly sorted datasets.
+              </p>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" class="sort">
+            <a href="#" class="sort-link">
+              <div class="sort-bg"></div>
+
+              <div class="sort-name">Selection Sort</div>
+
+              <p class="sort-desc">
+                Finds the smallest element in each pass and moves it to the
+                sorted part. Simple but slow for large datasets.
+              </p>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" class="sort">
+            <a href="#" class="sort-link">
+              <div class="sort-bg"></div>
+
+              <div class="sort-name">Bubble Sort</div>
+
+              <p class="sort-desc">
+                Repeatedly swaps adjacent elements if they're in the wrong
+                order. Easy to understand but inefficient.
+              </p>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" class="sort">
+            <a href="#" class="sort-link">
+              <div class="sort-bg"></div>
+
+              <div class="sort-name">Merge Sort</div>
+
+              <p class="sort-desc">
+                Divides the list, sorts each part, and merges them. Efficient
+                for large datasets, but uses extra memory.
+              </p>
+            </a>
+          </div>
+
+          <div data-aos="fade-up" class="sort">
+            <a href="#" class="sort-link">
+              <div class="sort-bg"></div>
+
+              <div class="sort-name">Quick Sort</div>
+
+              <p class="sort-desc">
+                Uses a pivot to partition and sort recursively. Fast and
+                efficient but can be slow with bad pivot choices.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="algo-dif">
+      <div class="hero-div">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="350"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="top-bottom"
+          class="dif-info"
+        >
+          <h1>What is the difference ?</h1>
+          <p>
+            Sorting algorithms differ in time and space complexity, stability,
+            and approach (comparison-based or not). Some are suited to specific
+            data, like quicksort for large datasets or insertion sort for nearly
+            sorted data. The choice depends on the context, data size, and
+            structure.
+          </p>
+        </div>
+        <img
+          data-aos="fade-left"
+          data-aos-offset="350"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="top-bottom"
+          src="assets/img/dif.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="index.html" class="logo"
+            ><i class="bx bx-data"></i>sort-view</a
+          >
+          <p>
+            Your go-to platform for sorting algorithm visualization, simplifying
+            complex concepts with interactive demos.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visualize.html">Visualize</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-link"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="social-link"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sort-View. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

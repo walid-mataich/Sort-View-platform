@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.sidebar {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(55, 59, 178);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.sidebar div {
+  margin-top: 30px;
+  color: white;
+}
+
+.view {
+  margin-top: 80px;
+  padding: 100px;
+
+  flex: 2;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+  position: relative;
+  bottom: 40%;
+  left: 10%;
+}
+.bar {
+  width: 5px;
+  background-color: #3b82f6;
+  transition: height 0.2s, background-color 0.2s;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s ease-in-out;
+}
+button:hover {
+  background-color: #90aaf3;
+  color: white;
+}
