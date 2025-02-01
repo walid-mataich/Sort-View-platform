@@ -1,9 +1,9 @@
 const container = document.getElementById('container');
-// const generateBtn = document.getElementById('generate');
-// const sortBtn = document.getElementById('sort');
-// const speedInput = document.getElementById('speed');
-// const barsNumInput = document.getElementById('bars-num');
-// const algorithmSelect = document.getElementById('options');
+const generateBtn = document.getElementById('generate');
+const sortBtn = document.getElementById('sort');
+const speedInput = document.getElementById('speed');
+const barsNumInput = document.getElementById('bars-num');
+const algorithmSelect = document.getElementById('options');
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -30,11 +30,14 @@ function arrToBars(arr){
 
 }
 
+generateBtn.addEventListener('click', () => {
+  const numBars = parseInt(barsNumInput.value) || 10; 
+  const heights = generateRandomArray(numBars, 50, 300); 
+  arrToBars(heights);
+});
 
 
-arrToBars(generateRandomArray(20, 20, 360))
 
-const bars = Array.from(document.getElementsByClassName("bar"));
 
 async function bubbleSort(bars) {
   for (let i = 0; i < bars.length - 1; i++) {
@@ -93,7 +96,7 @@ async function selection(bars) {
     
     bars[i].style.backgroundColor = 'red';
     bars[min_index].style.backgroundColor = 'green'; 
-    await delay(50); 
+    await delay(-speedInput.value); 
     bars[i].style.backgroundColor = '';
     bars[min_index].style.backgroundColor = '';
 
@@ -103,4 +106,7 @@ async function selection(bars) {
  
 }
 
-selection(bars);
+sortBtn.addEventListener('click',  async() => {
+  const bars = Array.from(document.getElementsByClassName("bar"));
+  selection(bars)
+});
