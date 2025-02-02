@@ -43,30 +43,28 @@ async function bubbleSort(bars) {
   for (let i = 0; i < bars.length - 1; i++) {
     for (let j = 0; j < bars.length - i - 1; j++) {
       
-      // Highlight compared bars
+
       bars[j].style.backgroundColor = "red";
       bars[j + 1].style.backgroundColor = "red";
-      await delay(5);
+      await delay(-speedInput.value);
 
-      // Compare heights directly from elements
+
       if (bars[j].offsetHeight > bars[j + 1].offsetHeight) {
-        // Swap heights
+
         let tempHeight = bars[j].style.height;
         bars[j].style.height = bars[j + 1].style.height;
         bars[j + 1].style.height = tempHeight;
       }
 
-      // Reset colors
+
       bars[j].style.backgroundColor = "blue";
       bars[j + 1].style.backgroundColor = "blue";
-      await delay(5);
+      await delay(-speedInput.value);
     }
 
-    // Mark sorted elements
     bars[bars.length - i - 1].style.backgroundColor = "green";
   }
 
-  // Mark the first bar as sorted
   bars[0].style.backgroundColor = "green";
 }
 
@@ -84,8 +82,6 @@ async function selection(bars) {
         min_index = j;
       }
     }
-
-    
 
     
     let temp = bars[i].style.height;
@@ -106,7 +102,53 @@ async function selection(bars) {
  
 }
 
+
+async function insertion(arr) {
+
+  for (let i = 1; i < arr.length; i++) {
+    let current = arr[i];
+    let currentHeight = current.style.height; 
+    let j = i - 1;
+
+    current.style.backgroundColor = "#000"; 
+    await delay(-speedInput.value); 
+
+    while (j >= 0 && parseInt(arr[j].style.height) > parseInt(currentHeight)) {
+
+      arr[j].style.backgroundColor = "#ff6b6b"; 
+
+      arr[j + 1].style.height = arr[j].style.height; 
+      j--;
+
+      arr[j + 1].style.backgroundColor = "#51cf66";
+    }
+    
+    arr[j + 1].style.height = currentHeight; // Insert the element at the right position
+    current.style.backgroundColor = "#51cf66"; // Mark the element as sorted
+  }
+
+  for (let bar of arr) {
+    bar.style.backgroundColor = "#51cf66";
+  }
+}
+
+
+
+
 sortBtn.addEventListener('click',  async() => {
   const bars = Array.from(document.getElementsByClassName("bar"));
-  selection(bars)
+  switch (algorithmSelect.value) {
+    case 'bubble':
+      bubbleSort(bars);
+      break;
+    case 'selection':
+      selection(bars);
+      break;
+    case 'insertion':
+      insertion(bars);
+      break;
+      
+    default:
+      break;
+  }
 });
