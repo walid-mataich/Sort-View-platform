@@ -17,8 +17,8 @@ function generateRandomArray(size, min, max) {
 
 function arrToBars(arr){
     container.innerHTML = '';
-    const containerWidth = container.clientWidth; // Get container width
-    const barWidth = (containerWidth / arr.length) - 2; // Dynamically set bar width (-2 for spacing)
+    const containerWidth = container.clientWidth; 
+    const barWidth = (containerWidth / arr.length) - 2; 
 
     arr.forEach(height => {
         const bar = document.createElement('div');
@@ -123,8 +123,8 @@ async function insertion(arr) {
       arr[j + 1].style.backgroundColor = "#51cf66";
     }
     
-    arr[j + 1].style.height = currentHeight; // Insert the element at the right position
-    current.style.backgroundColor = "#51cf66"; // Mark the element as sorted
+    arr[j + 1].style.height = currentHeight;
+    current.style.backgroundColor = "#51cf66"; 
   }
 
   for (let bar of arr) {
