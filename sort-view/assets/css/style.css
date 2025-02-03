@@ -4,8 +4,62 @@ html{
   scroll-behavior: y mandatory;
 }
 
+/* ===== Dark Mode Variables ===== */
+/* :root {
+  
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: rgb(55, 59, 178);
+  --card-bg: #f2f8f9;
+  --card-text: #452c2c;
+  --footer-bg: rgb(55, 59, 178);
+}
+
+[data-theme="dark"] {
+ 
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --primary-color: #4d9fff;
+  --card-bg: #2d2d2d;
+  --card-text: #e0e0e0;
+  --footer-bg: #0a0a2a;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.card {
+  background-color: var(--card-bg);
+}
+
+.small-desc {
+  color: var(--card-text);
+}
+
+.hero-div button {
+  background-color: var(--primary-color);
+}
+
+.go-corner {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-color));
+}
+
+.card:hover:before {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-color));
+} */
+
 body {
   font-family: "Poppins", serif;
+
   margin: 0;
   padding: 0;
 }
@@ -14,6 +68,7 @@ section {
   height: 100vh;
   position: relative;
   scroll-snap-align: start;
+
 }
 
 .info-sec {
@@ -27,9 +82,7 @@ section {
 .hero-div {
   display: flex;
   justify-content: center;
-  
   width: 80%;
-  padding-right: 100px;
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -455,3 +508,21 @@ section {
   transition: all 0.5s ease-out;
   color: #ffffff;
 }
+
+/* .theme-toggle-container {
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+} */
