@@ -196,6 +196,83 @@ async function quickSort(arr, low, high) {
 
 
 
+function mergeArrToBars(arr, highlight = []) {
+  container.innerHTML = '';
+  const containerWidth = container.clientWidth;
+  
+  const barWidth = (containerWidth / arr.length) - 2; 
+
+  arr.forEach((height, index) => {
+      const bar = document.createElement('div');
+      bar.classList.add('bar');
+      bar.style.height = `${height}px`;
+      bar.style.width = `${barWidth}px`;
+      
+      if (highlight.includes(index)) {
+          bar.style.backgroundColor = 'red'; 
+      } else {
+          bar.style.backgroundColor = '#4CAF50';
+      }
+
+      container.appendChild(bar);
+  });
+}
+
+
+async function merge(arr, left, mid, right) {
+    const n1 = mid - left + 1;
+    const n2 = right - mid;
+    
+    const L = new Array(n1);
+    const R = new Array(n2);
+    
+    for (let i = 0; i < n1; i++) L[i] = arr[left + i];
+    for (let j = 0; j < n2; j++) R[j] = arr[mid + 1 + j];
+    
+    let i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            i++;
+        } else {
+            arr[k] = R[j];
+            j++;
+        }
+        await delay(-speedInput.value); 
+        mergeArrToBars(arr, [k]);
+        k++;
+    }
+    
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+        await delay(-speedInput.value); 
+        mergeArrToBars(arr, [k]);
+    }
+    
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
+        await delay(-speedInput.value);
+        mergeArrToBars(arr, [k]);
+    }
+}
+
+async function mergeSort(arr, left, right) {
+    if (left >= right) return;
+    
+    const mid = Math.floor((left + right) / 2);
+    await mergeSort(arr, left, mid);
+    await mergeSort(arr, mid + 1, right);
+    await merge(arr, left, mid, right);
+    mergeArrToBars(arr);
+}
+
+
+
+
 
 
 
@@ -203,6 +280,7 @@ async function quickSort(arr, low, high) {
 
 sortBtn.addEventListener('click',  async() => {
   const bars = Array.from(document.getElementsByClassName("bar"));
+  let arr = bars.map(bar => parseInt(bar.style.height));
   switch (algorithmSelect.value) {
     case 'bubble':
       bubbleSort(bars);
@@ -214,12 +292,15 @@ sortBtn.addEventListener('click',  async() => {
       insertion(bars);
       break;
     case 'quick':
-      let arr = generateRandomArray(barsNumInput.value, 20, 360);
-      arrToBars(arr);
       quickSort(arr, 0, arr.length - 1);
       break;
-
+    case 'merge':     
+      mergeSort(arr, 0, arr.length - 1);
+      break;
     default:
       break;
   }
 });
+
+
+
