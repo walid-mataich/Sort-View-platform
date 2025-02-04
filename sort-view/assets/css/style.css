@@ -4,90 +4,61 @@ html{
   scroll-behavior: y mandatory;
 }
 
-/* ===== Dark Mode Variables ===== */
-/* :root {
-  
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --primary-color: rgb(55, 59, 178);
-  --card-bg: #f2f8f9;
-  --card-text: #452c2c;
-  --footer-bg: rgb(55, 59, 178);
+html, body {
+  overflow-x: hidden;
 }
 
-[data-theme="dark"] {
- 
-  --bg-color: #1a1a1a;
-  --text-color: #ffffff;
-  --primary-color: #4d9fff;
-  --card-bg: #2d2d2d;
-  --card-text: #e0e0e0;
-  --footer-bg: #0a0a2a;
-}
-
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-
-.footer {
-  background-color: var(--footer-bg);
-}
-
-.card {
-  background-color: var(--card-bg);
-}
-
-.small-desc {
-  color: var(--card-text);
-}
-
-.hero-div button {
-  background-color: var(--primary-color);
-}
-
-.go-corner {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-color));
-}
-
-.card:hover:before {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-color));
-} */
 
 body {
   font-family: "Poppins", serif;
-
   margin: 0;
   padding: 0;
 }
 
 section {
-  height: 100vh;
-  position: relative;
-  scroll-snap-align: start;
+  
+
+  scroll-snap-align: start;;
 
 }
 
-.info-sec {
-  display: flex;
+.info-sec{
+  height: 100vh;
+ display: flex;
  align-items: center;
  justify-content: center;
- 
+ flex-wrap: wrap;
+ transition: all 0.7s ease-in-out;
   
 }
 
-.hero-div {
+.algo-dif{
   display: flex;
-  justify-content: center;
-  width: 80%;
-  transition: opacity 0.8s ease, transform 0.8s ease;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ padding-bottom: 155px;
+ transition: all 0.7s ease-in-out;
 }
 
+
+.info-cont{
+
+  width: 52vh;
+  padding-left: 10%;
+}
+
+/* .hero-div {
+  display: flex;
+  width: 100%;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  border: solid;
+} */
+
 .sort-img {
+  width: 70vh;
   animation: img-load 1.2s;
+
 }
 
 .sort-h {
@@ -101,7 +72,7 @@ section {
   animation: p-load 1.4s;
 }
 
-.hero-div button {
+.info-sec button {
   padding: 10px 23px;
   border: none;
   border-radius: 5px;
@@ -111,12 +82,13 @@ section {
   box-shadow: 3px 5px 5px rgb(86, 86, 86);
   transition: 0.5s ease-in-out;
   animation: btn-load 1.5s;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.hero-div button:hover {
+.info-sec button:hover {
   background-color: rgb(6, 6, 69);
   box-shadow: none;
+  transform: scale(1.1);
 }
 
 .visualize {
@@ -292,13 +264,7 @@ section {
 }
 
 
-.algo-dif {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  padding: 120px;
-}
+
 
 .dif-info p {
   width: 400px;
@@ -509,20 +475,3 @@ section {
   color: #ffffff;
 }
 
-/* .theme-toggle-container {
-  margin-left: auto;
-  padding-right: 20px;
-}
-
-.theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--text-color);
-  transition: transform 0.3s ease;
-}
-
-.theme-toggle:hover {
-  transform: scale(1.2);
-} */

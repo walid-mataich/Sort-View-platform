@@ -1,14 +1,27 @@
-const heroDiv = document.querySelector('.hero-div');
+const infosec = document.querySelector('.info-sec');
+const menu = document.getElementById('menu_btn');
+const nav = document.getElementById('nav-container');
+const cl = document.getElementById('close');
 
+menu.onclick = function() {
 
+  nav.style.left = '25vh';
+  nav.style.transition = '0.5s';
+
+}
+
+cl.onclick = function() {
+  nav.style.left = '100vh';
+}
 
 window.addEventListener('scroll', () => {
-  // When scroll goes beyond 100px, apply the hidden class
   if (window.scrollY > 100) {
-    heroDiv.classList.add('hidden');
+    infosec.classList.add('hidden');
+    
     
   } else {
-    heroDiv.classList.remove('hidden');
+    infosec.classList.remove('hidden');
+    
     
     
   }
@@ -22,33 +35,5 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = e.clientY + 'px';
 });
 
-// // Dark Mode Toggle
-// const themeToggle = document.getElementById('theme-toggle');
-  
-// // Get stored theme or system preference
-// const currentTheme = localStorage.getItem('theme') || 
-//   (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
-// document.documentElement.setAttribute('data-theme', currentTheme);
-// updateButtonIcon(currentTheme);
 
-// themeToggle.addEventListener('click', () => {
-//   const activeTheme = document.documentElement.getAttribute('data-theme');
-//   const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
-  
-//   document.documentElement.setAttribute('data-theme', newTheme);
-//   localStorage.setItem('theme', newTheme);
-//   updateButtonIcon(newTheme);
-// });
-
-// function updateButtonIcon(theme) {
-//   themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-// }
-
-// // Watch for system theme changes
-// window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-//   const newTheme = e.matches ? 'dark' : 'light';
-//   document.documentElement.setAttribute('data-theme', newTheme);
-//   localStorage.setItem('theme', newTheme);
-//   updateButtonIcon(newTheme);
-// });

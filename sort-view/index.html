@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/img/data-regular-24.png">
   </head>
   <body>
 
@@ -18,12 +19,12 @@
     <header>
       <nav>
         <a href="index.html" class="logo"
-          ><i class="bx bx-data"></i>sort-view</a
+          ><i class='bx bx-data bx-tada' ></i>sort-view</a
         >
 
         <ul class="nav-container" id="nav-container">
           <!-- <i class='bx bx-x' onclick="menu_hide()"></i> -->
-
+          <i class='bx bx-x-circle' id="close"></i>
           <li>
             <a href="index.html" class="nav-links"><span class="nav-span">home</span></a>
           </li>
@@ -44,13 +45,13 @@
             </div>
           </li> -->
         </ul>
+        <i class='bx bx-menu' id="menu_btn"></i>
       </nav>
     </header>
 
     <div class="cursor"></div>
     
     <section class="info-sec">
-      <div class="hero-div">
         <img class="sort-img" src="assets/img/klipartz.com.png" alt="" />
         <div class="info-cont">
           <h1 class="sort-h">sort-view</h1>
@@ -62,7 +63,7 @@
             ><button>Visualize</button></a
           >
         </div>
-      </div>
+
     </section>
 
 
@@ -119,109 +120,9 @@
       </div>
 
     </section>
-<!-- 
-    <section class="algos">
 
-      <div class="card" data-aos="fade-up">
-        <div class="card2">
-        </div>
-      </div>
-
-      <div class="card" data-aos="fade-up">
-        <div class="card2">
-        </div>
-      </div>
-
-      <div class="card" data-aos="fade-up">
-        <div class="card2">
-        </div>
-      </div>
-
-      <div class="card" data-aos="fade-up">
-        <div class="card2">
-        </div>
-      </div>
-
-      <div class="card" data-aos="fade-up">
-        <div class="card2">
-        </div>
-      </div>
-
-    </section> -->
-
-    <!-- <section class="algos">
-      <div class="sorts-container">
-        <div  class="sorts-box">
-          <div data-aos="fade-up" class="sort">
-            <a href="#" class="sort-link">
-              <div class="sort-bg"></div>
-
-              <div class="sort-name">Insertion Sort</div>
-
-              <p class="sort-desc">
-                Inserts elements into their correct position one by one. Best
-                for small or nearly sorted datasets.
-              </p>
-            </a>
-          </div>
-
-          <div data-aos="fade-up" class="sort">
-            <a href="#" class="sort-link">
-              <div class="sort-bg"></div>
-
-              <div class="sort-name">Selection Sort</div>
-
-              <p class="sort-desc">
-                Finds the smallest element in each pass and moves it to the
-                sorted part. Simple but slow for large datasets.
-              </p>
-            </a>
-          </div>
-
-          <div data-aos="fade-up" class="sort">
-            <a href="#" class="sort-link">
-              <div class="sort-bg"></div>
-
-              <div class="sort-name">Bubble Sort</div>
-
-              <p class="sort-desc">
-                Repeatedly swaps adjacent elements if they're in the wrong
-                order. Easy to understand but inefficient.
-              </p>
-            </a>
-          </div>
-
-          <div data-aos="fade-up" class="sort">
-            <a href="#" class="sort-link">
-              <div class="sort-bg"></div>
-
-              <div class="sort-name">Merge Sort</div>
-
-              <p class="sort-desc">
-                Divides the list, sorts each part, and merges them. Efficient
-                for large datasets, but uses extra memory.
-              </p>
-            </a>
-          </div>
-
-          <div data-aos="fade-up" class="sort">
-            <a href="#" class="sort-link">
-              <div class="sort-bg"></div>
-
-              <div class="sort-name">Quick Sort</div>
-
-              <p class="sort-desc">
-                Uses a pivot to partition and sort recursively. Fast and
-                efficient but can be slow with bad pivot choices.
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="algo-dif">
-      <div class="hero-div">
         <div
           data-aos="fade-right"
           data-aos-offset="350"
@@ -246,7 +147,7 @@
           src="assets/img/dif.png"
           alt=""
         />
-      </div>
+
     </section>
 
     <footer class="footer">

@@ -2,6 +2,20 @@
   margin-right: 20px;
 }
 
+.bx.bx-menu{
+  display: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 42px;
+}
+
+.bx.bx-x-circle{
+  display: none;
+
+}
+
+
+
 .logo:hover {
   color: rgb(11, 19, 255);
 }
@@ -86,4 +100,53 @@ i {
 
 ul div {
   display: flex;
+}
+
+
+@media (max-width: 700px) {
+
+  .nav-container{
+    background-color:rgb(55, 59, 178);
+    position: absolute;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: -3vh;
+    width: 50vh;
+    left: 100vh;
+    height: 100vh;
+    padding-top: 40px;
+    
+  }
+
+  .nav-container i{
+    color: white;
+    padding-left: 24%; 
+    cursor: pointer; 
+  }
+
+  .nav-container li a{
+    color: white;
+  }
+
+  
+
+  .bx.bx-menu{
+    display: flex;
+  }
+
+  .bx.bx-x-circle{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    right: 35%;
+    bottom: 3%;
+    font-size: 42px;
+  }
+
+
+  .nav-span::after{
+    background-color: white;
+  }
 }
