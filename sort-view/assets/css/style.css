@@ -16,8 +16,6 @@ body {
 }
 
 section {
-  
-
   scroll-snap-align: start;;
 
 }
@@ -32,12 +30,14 @@ section {
   
 }
 
+
 .algo-dif{
   display: flex;
  align-items: center;
  justify-content: center;
  flex-wrap: wrap;
- padding-bottom: 155px;
+ padding-bottom: 170px;
+ padding-top: 110px;
  transition: all 0.7s ease-in-out;
 }
 
@@ -46,17 +46,15 @@ section {
 
   width: 52vh;
   padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-/* .hero-div {
-  display: flex;
-  width: 100%;
-  transition: opacity 0.8s ease, transform 0.8s ease;
-  border: solid;
-} */
+
 
 .sort-img {
-  width: 70vh;
+  width: 80vh;
   animation: img-load 1.2s;
 
 }
@@ -79,7 +77,7 @@ section {
   background-color: rgb(55, 59, 178);
   color: white;
   cursor: pointer;
-  box-shadow: 3px 5px 5px rgb(86, 86, 86);
+
   transition: 0.5s ease-in-out;
   animation: btn-load 1.5s;
   transition: all 0.3s ease;
@@ -383,8 +381,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
   padding: 120px;
+  
 }
 
 
@@ -432,17 +430,17 @@ section {
 .card {
   display: block;
   position: relative;
-  max-width: 320px;
+  max-width: 400px;
   max-height: 200px;
   background-color: #f2f8f9;
   border: solid;
   border-radius: 10px;
   padding: 2em 1.2em;
-  margin: 12px;
+  margin: 20px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  background: white;
   box-shadow: 10px 10px 10px rgb(90, 90, 90);
 }
 

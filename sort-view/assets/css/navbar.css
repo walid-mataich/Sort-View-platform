@@ -14,10 +14,14 @@
 
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
 
 
 .logo:hover {
-  color: rgb(11, 19, 255);
+  color: rgb(55, 59, 178);
 }
 
 header {
@@ -35,7 +39,7 @@ nav {
   padding-top: 5px;
   padding-left: 30px;
   height: 50px;
-  animation: header-load 2.4s;
+  animation: header-load 0.5s;
   background-color: rgb(255, 255, 255);
 }
 
@@ -106,17 +110,18 @@ ul div {
 @media (max-width: 700px) {
 
   .nav-container{
-    background-color:rgb(55, 59, 178);
+    background-color:rgb(55, 59, 178, 0.7);
     position: absolute;
     width: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     top: -3vh;
     width: 50vh;
     left: 100vh;
     height: 100vh;
     padding-top: 40px;
+    z-index: 100;
     
   }
 
@@ -149,4 +154,20 @@ ul div {
   .nav-span::after{
     background-color: white;
   }
+
+  .blur-overlay {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    background: rgba(0, 0, 0, 0.2); 
+    z-index: 5; 
+    visibility: hidden;
+    
+    
+}
 }

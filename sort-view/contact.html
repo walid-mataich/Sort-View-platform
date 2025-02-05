@@ -3,89 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Document</title>
 </head>
-    
-    <body>
+<body>
 
-        <header>
-
-            <nav>
-                
-                
-                <a href="index.html" class="logo"><i class='bx bx-data bx-tada' ></i>sort-view</a>
-            
-                <ul class="nav-container" id="nav-container">
-                  <!-- <i class='bx bx-x' onclick="menu_hide()"></i> -->
-        
-                  <li>
-                    <a href="index.html" class="nav-links"><span class="nav-span">home</span></a>
-                  </li>
-                  <li>
-                    <a href="visualize.html" class="nav-links"
-                      ><span class="nav-span">visualize</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="contact.html" class="nav-links"><span class="nav-span">contact</span></a>
-                  </li>
-                  <li>
-                    <a href="" class="nav-links"><span class="nav-span">about us</span></a>
-                  </li>
-                </ul>
-                <!-- <div class="nav-btns">
-                <a href=""><i class='bx bx-user-circle'></i></i></a>
-                <a href=""><i class='bx bx-shopping-bag'></i></a>
-                <div id = "me" onclick="menu_nav()" ><i class='bx bx-menu' ></i></div>
-                </div> -->
-                
-            </nav>
-        
-            </header>
-        <div class="container">
-          <ul class="contact-list">
+    <header>
+        <div class="blur-overlay"></div>
+        <nav>
+          <a href="index.html" class="logo"
+            ><i class='bx bx-data bx-tada' ></i>sort-view</a
+          >
+  
+          <ul class="nav-container" id="nav-container">
+            <!-- <i class='bx bx-x' onclick="menu_hide()"></i> -->
+            <i class='bx bx-x-circle' id="close"></i>
             <li>
-              <a class="facebook" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
+              <a href="index.html" class="nav-links"><span class="nav-span">home</span></a>
             </li>
             <li>
-              <a class="twitter" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
+              <a href="visualize.html" class="nav-links"
+                ><span class="nav-span">visualize</span></a
+              >
             </li>
             <li>
-              <a class="instagram" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
+              <a href="contact.html" class="nav-links"><span class="nav-span">contact</span></a>
             </li>
             <li>
-              <a class="google" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
+              <a href="" class="nav-links"><span class="nav-span">about us</span></a>
             </li>
+            <!-- <li>
+              <div class="theme-toggle-container">
+                <button id="theme-toggle" class="theme-toggle">🌙</button>
+              </div>
+            </li> -->
           </ul>
-      </div>
-        
+          <i class='bx bx-menu' id="menu_btn"></i>
+        </nav>
+      </header>
     
+      <script src="assets/js/index.js"></script>
 </body>
 </html>

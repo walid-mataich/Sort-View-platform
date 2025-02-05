@@ -14,6 +14,7 @@
   </head>
   <body>
     <header>
+      <div class="blur-overlay"></div>
       <nav>
         <a href="index.html" class="logo"
           ><i class='bx bx-data bx-tada' ></i>sort-view</a
@@ -21,6 +22,7 @@
 
         <ul class="nav-container" id="nav-container">
           <!-- <i class='bx bx-x' onclick="menu_hide()"></i> -->
+          <i class='bx bx-x-circle' id="close"></i>
 
           <li>
             <a href="index.html" class="nav-links"><span class="nav-span">home</span></a>
@@ -37,11 +39,7 @@
             <a href="" class="nav-links"><span class="nav-span">about us</span></a>
           </li>
         </ul>
-        <!-- <div class="nav-btns">
-            <a href=""><i class='bx bx-user-circle'></i></i></a>
-            <a href=""><i class='bx bx-shopping-bag'></i></a>
-            <div id = "me" onclick="menu_nav()" ><i class='bx bx-menu' ></i></div>
-            </div> -->
+        <i class='bx bx-menu' id="menu_btn"></i>
       </nav>
     </header>
 
@@ -78,5 +76,6 @@
     </section>
 
     <script src="assets/js/visual.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
