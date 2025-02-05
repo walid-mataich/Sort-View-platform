@@ -117,7 +117,7 @@ ul div {
     flex-direction: column;
     gap: 20px;
     top: -3vh;
-    width: 50vh;
+    width: 60vh;
     left: 100vh;
     height: 100vh;
     padding-top: 40px;
@@ -171,3 +171,5 @@ ul div {
     
 }
 }
+
+

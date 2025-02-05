@@ -87,8 +87,8 @@ button{
 button:hover{
     background-color: rgb(55, 59, 178, 0.7);
     color: black;
-    background-color: white;
-    border: solid 1px black;
+    background-color: rgba(149, 153, 255, 0.7);
+    box-shadow: 10px 10px 10px rgb(142, 142, 142);
 
 
 }
@@ -116,3 +116,4 @@ button:hover{
       left: 0%;
     }
   }
+
