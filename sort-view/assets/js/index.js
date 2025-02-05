@@ -9,7 +9,7 @@ menu.onclick = function() {
   nav.style.left = '25vh';
   nav.style.transition = '0.9s';
   blu.style.visibility = 'visible';
-  blu.style.transition = '0.3s';
+  blu.style.transition = '0.4s';
 
 
 }

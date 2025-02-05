@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+
+html{
+    scroll-behavior: y mandatory;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  
+  body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  section{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  div{
+    
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+img{
+    
+    border-radius: 10px;
+    width: 50vh;
+    animation: img-load 0.8s;
+
+
+  }
+
+p{
+    animation: p-load 1.4s;
+}
+
+h1{
+    font-size:2.5em;
+    animation: p-load 1s;
+}
+
+
+h4{
+    animation: p-load 1.2s;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+
+button{
+    padding: 15px 45px;
+    background-color: rgb(55, 59, 178);
+    border: none;
+    border-radius: 10px;
+    width: 12em;
+    margin-top: 10px;
+    color: white;
+    font-size: large;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    animation: p-load 1.6s;
+}
+
+
+button:hover{
+    background-color: rgb(55, 59, 178, 0.7);
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+
+
+}
+
+@keyframes img-load {
+    0% {
+      position: relative;
+      right: 100%;
+    }
+  
+    100% {
+      position: relative;
+      right: 0%;
+    }
+  }
+  
+  @keyframes p-load {
+    0% {
+      position: relative;
+      left: 100%;
+    }
+  
+    100% {
+      position: relative;
+      left: 0%;
+    }
+  }

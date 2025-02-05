@@ -181,3 +181,34 @@ button:hover {
   width: 100%;
 }
 
+@media (max-width: 1300px) {
+  .dashboard {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    background-color: rgb(55, 59, 178);
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .sidebar div {
+    margin-top: 30px;
+    color: white;
+  }
+
+  .container {
+
+    width: 100%;
+  
+  }
+  
+  
+}

@@ -430,7 +430,7 @@ section {
 .card {
   display: block;
   position: relative;
-  max-width: 400px;
+  max-width: 300px;
   max-height: 200px;
   background-color: #f2f8f9;
   border: solid;
