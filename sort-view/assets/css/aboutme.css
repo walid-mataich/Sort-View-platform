@@ -2,12 +2,9 @@
 
 
 
-html{
-    scroll-behavior: y mandatory;
-  }
-  
   html, body {
     overflow-x: hidden;
+
   }
   
   
@@ -25,6 +22,7 @@ html{
     gap: 30px;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   }
 
 
@@ -47,9 +45,11 @@ img{
 
   }
 
+
 p{
     animation: p-load 1.4s;
 }
+
 
 h1{
     font-size:2.5em;
@@ -62,11 +62,13 @@ h4{
 }
 
 
+
 a{
     text-decoration: none;
     color: white;
     font-size: large;
 }
+
 
 
 button{
@@ -76,6 +78,7 @@ button{
     border-radius: 10px;
     width: 12em;
     margin-top: 10px;
+    margin-bottom: 30px;
     color: white;
     font-size: large;
     transition: 0.5s ease-in-out;
@@ -116,4 +119,14 @@ button:hover{
       left: 0%;
     }
   }
-
+  .cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-out;
+    z-index: 998;
+  }
