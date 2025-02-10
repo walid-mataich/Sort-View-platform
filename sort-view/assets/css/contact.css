@@ -38,6 +38,10 @@ a{
   border-radius: 100%;
 }
 
+h1{
+  animation: h-load 1s ease-in-out;
+}
+
 .social-container div  i{
   background-color: rgb(0, 0, 0);
   border-radius: 100%;
@@ -49,36 +53,81 @@ a{
 .bx.bxl-linkedin:hover{
   background-color: rgb(1, 39, 164);
   transform: scale(1.2);
+  box-shadow: none;
 }
 
 .bx.bxl-twitter:hover{
   background-color: rgb(0, 172, 238);
   transform: scale(1.2);
+  box-shadow: none;
 }
 
 .bx.bxl-github:hover{
-  background-color:rgb(73, 1, 118);
+  background-color: rgb(73, 1, 118);
   transform: scale(1.2);
+  box-shadow: none;
 }
 
 .bx.bx-envelope:hover{
   background-color: rgb(201, 0, 0);
   transform: scale(1.2);
+  box-shadow: none;
+}
+
+
+
+.bx.bxl-github{
+  box-shadow: 0 0 20px 10px  rgb(73, 1, 118);
+}
+
+.bx.bx-envelope{
+  box-shadow: 0 0 20px 10px  rgb(201, 0, 0);
 }
 
 .bx.bxl-linkedin{
-  animation: linkedin-an 1s;
+  box-shadow: 0 0 20px 10px  rgb(1, 39, 164);
 }
 
-@keyframes linkedin-an{
-  0%{
+.bx.bxl-twitter{
+  box-shadow: 0 0 20px 10px  rgb(0, 172, 238);
+}
+
+.github{
+  animation: an 1.2s ease-in-out;
+  
+}
+
+.fb{
+  animation: an 1.4s ease-in-out;
+}
+
+.linkedin{
+  animation: an .5s ease-in-out;
+}
+
+.x{
+  animation: an .9s ease-in-out;
+}
+
+@keyframes h-load {
+  0% {
     position: relative;
-    top: 100%;
+    bottom: 100%;
   }
 
-  100%{
+  100% {
     position: relative;
-    top: 0%;
+    bottom: 0%;
+  }
+  
+}
+
+@keyframes an{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
   }
 }
 
