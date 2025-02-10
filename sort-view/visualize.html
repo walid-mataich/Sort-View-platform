@@ -9,8 +9,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="assets/img/data-regular-24.png">
+    <title>sort-view</title>
   </head>
   <body>
     <header>
@@ -75,6 +75,16 @@
         <div class="container" id="container"></div>
       </div>
     </section>
+    <div class="modal-overlay" id="modal">
+      <div class="modal-content">
+          <p>
+              For optimal visualization, it is recommended to choose a number of bars less than 200 for a normal laptop screen and less than 80 for phones.  
+              Using a laptop is preferable for better visualization &#128513;.<br>  
+              Alternatively, you can zoom out to view more bars.
+          </p>
+          <button class="close-btn" onclick="closeModal()">OK</button>
+      </div>
+  </div>
 
     <script src="assets/js/visual.js"></script>
     <script src="assets/js/index.js"></script>

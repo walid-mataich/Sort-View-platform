@@ -154,3 +154,64 @@ button:hover {
   transition: all 0.3s ease-out;
   z-index: 998;
 }
+
+@media (max-width: 700px) {
+  .cursor{
+    display: none;
+  }
+}
+
+
+        /* Styles pour le fond du modal */
+        .modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+
+      /* Conteneur du modal */
+      .modal-content {
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          max-width: 400px;
+          text-align: center;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          transform: translateY(-20px);
+          transition: transform 0.3s ease;
+      }
+
+      /* Affichage du modal */
+      .modal-overlay.show {
+          opacity: 1;
+          visibility: visible;
+      }
+
+      .modal-overlay.show .modal-content {
+          transform: translateY(0);
+      }
+
+      /* Bouton de fermeture */
+      .close-btn {
+          margin-top: 15px;
+          padding: 8px 16px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+      }
+
+      .close-btn:hover {
+          background-color: #0056b3;
+      }

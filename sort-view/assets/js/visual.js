@@ -165,19 +165,19 @@ async function partition(arr, low, high) {
 
   for (let j = low; j <= high - 1; j++) {
     quickSortarrToBars(arr, high, [j, i + 1]);
-      await delay(-speedInput.value/3);
+      await delay(-speedInput.value/2);
 
       if (arr[j] < pivot) {
           i++;
           [arr[i], arr[j]] = [arr[j], arr[i]];
           quickSortarrToBars(arr, high, [j, i]);
-          await delay(-speedInput.value/3);
+          await delay(-speedInput.value/2);
       }
   }
 
   [arr[i + 1], arr[high]] = [arr[high], arr[i + 1]];
   quickSortarrToBars(arr, i + 1);
-  await delay(-speedInput.value/3);
+  await delay(-speedInput.value/2);
 
   return i + 1;
 }
@@ -247,7 +247,7 @@ async function merge(arr, left, mid, right) {
         arr[k] = L[i];
         i++;
         k++;
-        await delay(-speedInput.value); 
+        await delay(-speedInput.value ); 
         mergeArrToBars(arr, [k]);
     }
     
@@ -304,3 +304,11 @@ sortBtn.addEventListener('click',  async() => {
 
 
 
+
+window.onload = function() {
+  document.getElementById("modal").classList.add("show");
+};
+
+function closeModal() {
+  document.getElementById("modal").classList.remove("show");
+}

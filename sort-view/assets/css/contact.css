@@ -94,3 +94,9 @@ a{
   transition: all 0.3s ease-out;
   z-index: 998;
 }
+
+@media (max-width: 700px) {
+  .cursor{
+    display: none;
+  }
+}

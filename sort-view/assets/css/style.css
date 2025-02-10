@@ -497,6 +497,12 @@ display: flex;
   color: #ffffff;
 }
 
+@media (max-width: 700px) {
+  .cursor{
+    display: none;
+  }
+}
+
 @media (max-width: 840px) {
   .algos {
 
