@@ -89,9 +89,8 @@ display: flex;
   background-color: rgb(55, 59, 178);
   color: white;
   cursor: pointer;
-
   transition: 0.5s ease-in-out;
-  animation: btn-load 1.5s;
+  animation: btn-load 1.6s;
   transition: all 0.3s ease;
 }
 
@@ -150,7 +149,7 @@ display: flex;
 @keyframes btn-load {
   0% {
     position: relative;
-    left: 100%;
+    left: 60vh;
   }
 
   100% {
