@@ -1,92 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/visualize.css" />
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="assets/img/data-regular-24.png">
-    <title>sort-view</title>
-  </head>
-  <body>
-    <header>
-      <div class="blur-overlay"></div>
-      <nav>
-        <a href="index.html" class="logo"
-          ><i class='bx bx-data bx-tada' ></i>sort-view</a
-        >
 
-        <ul class="nav-container" id="nav-container">
-          <!-- <i class='bx bx-x' onclick="menu_hide()"></i> -->
-          <i class='bx bx-x-circle' id="close"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/visualize.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/img/data-regular-24.png">
+  <title>sort-view</title>
+</head>
 
-          <li>
-            <a href="index.html" class="nav-links"><span class="nav-span">home</span></a>
-          </li>
-          <li>
-            <a href="visualize.html" class="nav-links"
-              ><span class="nav-span">visualize</span></a
-            >
-          </li>
-          <li>
-            <a href="aboutme.html" class="nav-links"><span class="nav-span">about me</span></a>
-          </li>
-          <li>
-            <a href="contact.html" class="nav-links"><span class="nav-span">contact</span></a>
-          </li>
-        </ul>
-        <i class='bx bx-menu' id="menu_btn"></i>
-      </nav>
-    </header>
-    <div class="cursor"></div>
+<body>
+  <header>
+    <div class="blur-overlay"></div>
+    <nav>
+      <a href="index.html" class="logo"><i class='bx bx-data bx-tada'></i>sort-view</a>
 
-    <section class="dashboard">
-      <div class="sidebar">
-        <div class="algo">
-          <label for="options">Choose a sorting algorithm:</label><br />
-          <select id="options" name="options">
-            <option value="insertion">Insertion Sort</option>
-            <option value="selection">Selection Sort</option>
-            <option value="bubble">Bubble Sort</option>
-            <option value="merge">Merge Sort</option>
-            <option value="quick">Quick Sort</option>
-          </select><br />
-        </div>
-        <div class="num">
-          <label for="bars-num">Enter the number of bars</label><br />
-          <input type="text" id="bars-num" name="bars-num" /><br />
-        </div>
-        <div class="sp" style="display: flex; align-items: center; gap: 10px;">
-          <label for="speed">Speed</label>
-          <input type="range" name="speed" id="speed" min="-200" max="-1" value="-100" />
-        </div>
-        <div>
-          <button id="generate">Generate Array</button>
-          <button id="sort" >Start Sorting</button>
-        </div>
-      
+      <ul class="nav-container" id="nav-container">
+        <!-- <i class='bx bx-x' onclick="menu_hide()"></i> -->
+        <i class='bx bx-x-circle' id="close"></i>
+
+        <li>
+          <a href="index.html" class="nav-links"><span class="nav-span">home</span></a>
+        </li>
+        <li>
+          <a href="visualize.html" class="nav-links"><span class="nav-span">visualize</span></a>
+        </li>
+        <li>
+          <a href="aboutme.html" class="nav-links"><span class="nav-span">about me</span></a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-links"><span class="nav-span">contact</span></a>
+        </li>
+      </ul>
+      <i class='bx bx-menu' id="menu_btn"></i>
+    </nav>
+  </header>
+  <div class="cursor"></div>
+
+  <section class="dashboard">
+    <div class="sidebar">
+      <div class="algo">
+        <label for="options">Choose a sorting algorithm:</label><br />
+        <select id="options" name="options">
+          <option value="insertion">Insertion Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="bubble">Bubble Sort</option>
+          <option value="merge">Merge Sort</option>
+          <option value="quick">Quick Sort</option>
+        </select><br />
+      </div>
+      <div class="num">
+        <label for="bars-num">Enter the number of bars</label><br />
+        <input type="text" id="bars-num" name="bars-num" /><br />
+      </div>
+      <div class="sp" style="display: flex; align-items: center; gap: 10px;">
+        <label for="speed">Speed</label>
+        <input type="range" name="speed" id="speed" min="-200" max="-1" value="-100" />
+      </div>
+      <div>
+        <button id="generate">Generate Array</button>
+        <button id="sort">Start Sorting</button>
       </div>
 
-      
-        <div class="container" id="container"></div>
-      </div>
-    </section>
-    <div class="modal-overlay" id="modal">
-      <div class="modal-content">
-          <p>
-              For optimal visualization, it is recommended to choose a number of bars less than 200 for a normal laptop screen and less than 80 for phones.  
-              Using a laptop is preferable for better visualization &#128513;.<br>  
-              Alternatively, you can zoom out to view more bars.
-          </p>
-          <button class="close-btn" onclick="closeModal()">OK</button>
-      </div>
+    </div>
+
+
+    <div class="container" id="container"></div>
+    </div>
+  </section>
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <p>
+        For optimal visualization, it is recommended to choose a number of bars less than 200 for a normal laptop screen
+        and less than 80 for phones.
+        Using a laptop is preferable for better visualization &#128513;.<br>
+        Alternatively, you can zoom out to view more bars.
+      </p>
+      <button class="close-btn" onclick="closeModal()">OK</button>
+    </div>
   </div>
 
-    <script src="assets/js/visual.js"></script>
-    <script src="assets/js/index.js"></script>
-  </body>
+  <script src="assets/js/visual.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
 </html>
