@@ -1,8 +1,7 @@
 # SortView: Sorting Algorithm Visualizer
 
 ![SortView](https://img.shields.io/badge/Status-Live-brightgreen)  
-**Live Demo**: [sort-view.netlify.app](https://sort-view.netlify.app) 
-[walid-mataich.github.io/Sort-View-platform/](https://walid-mataich.github.io/Sort-View-platform/)
+**Live Demo**: [sort-view.netlify.app](https://sort-view.netlify.app) OR [walid-mataich.github.io/Sort-View-platform/](https://walid-mataich.github.io/Sort-View-platform/)
 
 ## 📖 About SortView  
 
