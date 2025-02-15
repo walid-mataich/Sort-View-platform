@@ -1,7 +1,8 @@
 # SortView: Sorting Algorithm Visualizer
 
 ![SortView](https://img.shields.io/badge/Status-Live-brightgreen)  
-**Live Demo**: [sort-view.netlify.app](https://sort-view.netlify.app)  
+**Live Demo**: [sort-view.netlify.app](https://sort-view.netlify.app) 
+[walid-mataich.github.io/Sort-View-platform/](https://walid-mataich.github.io/Sort-View-platform/)
 
 ## 📖 About SortView  
 
@@ -24,7 +25,7 @@ SortView is an interactive web platform designed to help users visualize and und
 ## 🛠️ Technologies Used  
 
 - **Frontend**: HTML, CSS, JavaScript  
-- **Hosting**: Netlify  
+- **Hosting**: Netlify & Github pages
 
 ## 🚀 Getting Started  
 
