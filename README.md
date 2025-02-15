@@ -5,7 +5,7 @@
 
 ## 📖 About SortView  
 
-SortView is an interactive web platform designed to help users visualize and understand how various sorting algorithms work. Whether you're a student, teacher, or programmer, SortView simplifies the learning process by offering intuitive animations for popular sorting techniques.  
+SortView is an interactive web platform designed to help users visualize and understand how various sorting algorithms work. SortView simplifies the learning process by offering intuitive animations for popular sorting techniques.  
 
 ## ✨ Features  
 
@@ -17,9 +17,8 @@ SortView is an interactive web platform designed to help users visualize and und
   - Merge Sort  
   - Quick Sort  
 - ⚙️ **Customizable Input**:  
-  - Set array size and speed of visualization.  
-  - Generate random arrays or create custom arrays.  
-- 📊 **Performance Insights**: Understand time and space complexity for each algorithm.  
+  - Set arrays number and speed of visualization.  
+  - Generate random arrays   
 - 🌐 **Responsive Design**: Optimized for desktop and mobile devices.  
 
 ## 🛠️ Technologies Used  
@@ -36,5 +35,5 @@ Follow these steps to set up the project locally:
 
 ### Clone the Repository  
 ```bash  
-git clone https://github.com/yourusername/sort-view.git  
-cd sort-view  
+git clone https://github.com/walid-mataich/Sort-View-platform.git
+cd Sort-View-platform  
